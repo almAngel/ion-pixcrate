@@ -1,6 +1,6 @@
 
 # Pixcrate Snap
-## Current LTS: **_Alpha 1_**
+## Current LTS: **_Alpha 2_**
 
 ## ¿Qué es Pixcrate?
 Pixcrate pretende ser una red social para compartir imágenes con nuestros seguidores, haciendo hincapié en la usabilidad y un *feel* más humano, tanto en sus interfaces de usuario como en la interacción social dentro de la app.
@@ -45,13 +45,17 @@ Está desarrollada con **Ionic 4** para el front y **NodeJS**, **Express**, **Mo
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/logout_alert.png" alt="al-settings-page" width="250"/>
 </div>
 
-## Detalles de desarrollo (Alpha 1)
+## Detalles de desarrollo (Alpha 2)
 
 - Framework propio creado desde cero para desarrollo de APIs basadas en **MEAN** stack. (Notificar para ver repositorio)
 
 - Incorpora un sistema de autenticación con **_JWT_**, que se encargará de las sesiones y de verificar que sólo tú puedas manipular tus imágenes, además de contar con encriptado **_hash+salt_** para tu contraseña.
 
-- También cuenta con una versión Android nativo (público proximamente).
+- Incorpora la funcionalidad de la cámara para que el usuario pueda hacer fotos y subirlas al instante.
+
+- Se requieren permisos de geolocalización y cámara para el correcto funcionamiento de la aplicación.
+
+- Se recogen datos de usuario, como última localización e información del dispositivo.
 
 DIAGRAMA DE BASE DE DATOS (NO RELACIONAL):
 
