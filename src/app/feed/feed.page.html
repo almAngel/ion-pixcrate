@@ -1,0 +1,13 @@
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="loadImagesOnRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="crescent" color="dark">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div *ngFor="let image of imageService.images">
+    <div *ngIf="image != undefined">
+      <app-publication [src]="image.url" [description]="image.description" [id]="image._id"
+        (onDelete)="onDeleteImpl($event)">
+      </app-publication>
+    </div>
+  </div>
+</ion-content>

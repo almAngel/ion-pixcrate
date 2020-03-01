@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="openCamera()">
+        <ion-icon slot="start" name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Upload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="upload-card">
+    <ion-card-content>
+      <ion-img src="./assets/add-photo.png"></ion-img>
+      <ion-input type="file" (change)="loadFile($event)"></ion-input>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-text color="dark" class="ion-text-center ion-margin-top">
+    <p>Click this button to upload a new image</p>
+  </ion-text>
+</ion-content>

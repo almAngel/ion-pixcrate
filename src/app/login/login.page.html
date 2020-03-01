@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pixcrate
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content (keyup)="checkAllRegex()">
+  <ion-img src="/assets/p_logo.jpg" class="logo"></ion-img>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Log in
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input required type="email" [(ngModel)]="email" clearInput></ion-input>
+      </ion-item>
+      <ion-note *ngIf="!validEmail" class="ion-padding">This email is not a valid email</ion-note>
+      <ion-item>
+        <ion-label position="inline">Password</ion-label>
+        <ion-input required type="password" [(ngModel)]="password" clearOnEdit="false" clearInput></ion-input>
+        <ion-icon pvToggle></ion-icon>
+      </ion-item>
+      <ion-note *ngIf="!validPassword">
+        <p class="ion-padding">
+          Password must contain a number, an uppercase and at least eight characters
+        </p>
+      </ion-note>
+      <ion-button (click)="login()" expand="full" type="button" disabled="true">
+        Login
+      </ion-button>
+      <ion-text class="ion-small">Not registered yet? Then <a href="/register">Register</a></ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

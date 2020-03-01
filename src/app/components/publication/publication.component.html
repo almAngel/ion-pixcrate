@@ -1,0 +1,21 @@
+<div class="img-container">
+  <ion-item>
+    <ion-buttons slot="end" class="ion-padding-top ion-padding-bottom">
+      <ion-button (click)="onClickMoreButton($event)" shape="round">
+        <ion-icon name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+  <div class="img">
+    <ion-img [src]="src" class="img__squared"></ion-img>
+    <ion-textarea class="img--description" 
+    id="desc"
+    [value]="description" 
+    disabled="true" 
+    (keypress)="confirm($event.keyCode)"
+    minLength="0"
+    maxLength="420"
+    spellcheck="false"></ion-textarea>
+  </div>
+
+</div>

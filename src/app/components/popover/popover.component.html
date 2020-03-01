@@ -1,0 +1,9 @@
+<ion-list>
+  <ion-list-header>
+    <ion-label>{{header}}</ion-label>
+  </ion-list-header>
+  <div *ngFor="let option of options">
+    <ion-item (click)="option.callback()" class="clickable">{{option.name}}</ion-item>
+  </div>
+  <ion-item (click)="dismiss()" lines="none" class="clickable">Close</ion-item>
+</ion-list>

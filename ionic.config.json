@@ -1,0 +1,7 @@
+{
+  "name": "ion-pixcrate",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

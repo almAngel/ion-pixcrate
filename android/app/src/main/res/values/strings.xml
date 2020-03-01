@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pixcrate</string>
+    <string name="title_activity_main">Pixcrate</string>
+    <string name="package_name">com.angellopez.pixcrate</string>
+    <string name="custom_url_scheme">com.angellopez.pixcrate</string>
+</resources>

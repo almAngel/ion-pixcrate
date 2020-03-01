@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pixcrate
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content (keyup)="checkAllRegex()">
+  <ion-img src="/assets/p_logo.jpg" class="logo"></ion-img>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Register
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input required type="email" [(ngModel)]="email" clearInput></ion-input>
+      </ion-item>
+      <ion-note *ngIf="!validEmail" class="ion-padding">
+        {{emailHelp}}
+      </ion-note>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input required type="text" [(ngModel)]="username" clearInput></ion-input>
+      </ion-item>
+      <ion-note *ngIf="!validUsername" class="ion-padding">
+        {{usernameHelp}}
+      </ion-note>
+      <ion-item>
+        <ion-label position="inline">Password</ion-label>
+        <ion-input required type="password" [(ngModel)]="password" clearOnEdit="false" clearInput></ion-input>
+        <ion-icon pvToggle></ion-icon>
+      </ion-item>
+      <ion-note *ngIf="!validPassword || !passwordMatches()">
+        <p class="ion-padding">
+          {{passwordHelp}}
+        </p>
+      </ion-note>
+      <ion-item>
+        <ion-label position="inline">Confirm Password</ion-label>
+        <ion-input required type="password" [(ngModel)]="confirmPassword" clearOnEdit="false" clearInput></ion-input>
+        <ion-icon pvToggle></ion-icon>
+      </ion-item>
+      <ion-note *ngIf="!validConfirmPassword || !passwordMatches()">
+        <p class="ion-padding">
+            {{confirmPasswordHelp}}
+        </p>
+      </ion-note>
+      <ion-button (click)="register()" expand="full" type="button" disabled="true">
+        Register
+      </ion-button>
+      <ion-text class="ion-small">If you have registered previously <a href="/login">Log In</a></ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
