@@ -38,6 +38,9 @@ Está desarrollada con **Ionic 4** para el front y **NodeJS**, **Express**, **Mo
 </div>
 <h2>Dentro de la app</h2>
 <div>
+  *NUEVO!!*
+  <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/pixcrate_camera.jpg" alt="camera-option" width="250"/>
+  
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/feed.png" alt="feed-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/upload.png" alt="upload-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/settings.png" alt="settings-page" width="250"/>
