@@ -37,16 +37,19 @@ Está desarrollada con **Ionic 4** para el front y **NodeJS**, **Express**, **Mo
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/register.png" alt="register-page" width="250"/>
 </div>
 <h2>Dentro de la app</h2>
-<div>
-  *NUEVO!!*
-  <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/pixcrate_camera.jpg" alt="camera-option" width="250"/>
-  
+<div>  
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/feed.png" alt="feed-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/upload.png" alt="upload-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/settings.png" alt="settings-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/contextual_menu.png" alt="cm-feed-page" width="250"/>
   <img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/logout_alert.png" alt="al-settings-page" width="250"/>
 </div>
+
+# NUEVO!!
+
+Funcionalidad de cámara de fotos para capturar momentos memorables y subirlos al instante
+
+<img src="https://github.com/almAngel/ion-pixcrate/blob/master/imagenes/pixcrate_camera.jpg" alt="camera-option" width="250"/>
 
 ## Detalles de desarrollo (Alpha 2)
 
