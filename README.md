@@ -2,6 +2,8 @@
 # Pixcrate Snap
 ## Current LTS: **_Alpha 2_**
 
+Backend: https://github.com/almAngel/p_11410199117114115105118101_2019
+
 ## ¿Qué es Pixcrate?
 Pixcrate pretende ser una red social para compartir imágenes con nuestros seguidores, haciendo hincapié en la usabilidad y un *feel* más humano, tanto en sus interfaces de usuario como en la interacción social dentro de la app.
 
